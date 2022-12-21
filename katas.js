@@ -1,5 +1,5 @@
 
-// Couting Sheeps
+// Counting Sheeps
 
 function countSheeps(arrayOfSheep) {
   let countingSheeps = 0;
@@ -39,3 +39,32 @@ console.log(
     true,
   ])
 );
+
+
+// Rental car cost
+
+function rentalCarCost(d) {
+  let rentalCost = 40
+  let total = rentalCost * d
+  
+  
+  if (d < 3) {
+return total
+  }
+   else if ( d >= 3 && d < 7 ) {
+return  total - 20
+  } else if (d >= 7) {
+return total - 50
+  }
+
+}
+
+// Odd or even
+
+function oddOrEven(array) {
+  let sum = 0;
+ for( let i = 0; i < array.length; i++) {
+   sum += array[i]
+ }
+return sum % 2 == 0 ? 'even' : 'odd'
+}
