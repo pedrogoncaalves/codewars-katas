@@ -68,3 +68,12 @@ function oddOrEven(array) {
  }
 return sum % 2 == 0 ? 'even' : 'odd'
 }
+
+// Perfect square number
+
+
+var isSquare = function(n){
+  let squareNumber = Math.sqrt(n)
+  return squareNumber === Math.trunc(squareNumber) ? true : false
+}
+
